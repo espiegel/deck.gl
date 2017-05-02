@@ -7,7 +7,7 @@ import DeckGLOverlay from './deckgl-overlay.js';
 import {csv as requestCsv} from 'd3-request';
 
 // Set your mapbox token here
-const MAPBOX_TOKEN = process.env.MAPBOX_ACCESS_TOKEN; // eslint-disable-line
+const MAPBOX_TOKEN = "pk.eyJ1IjoiZXNwaWVnZWwiLCJhIjoiY2oxbzA0czByMDExdjJ3bWh0eWVwdWJkaiJ9.N5ytUp11CPnxwe0vvYtBFQ"; // eslint-disable-line
 
 class Root extends Component {
 
@@ -22,7 +22,7 @@ class Root extends Component {
       data: null
     };
 
-    requestCsv('./data/heatmap-data.csv', (error, response) => {
+    requestCsv('./data/data2.csv', (error, response) => {
       if (!error) {
         const data = response.map(d => ([Number(d.lng), Number(d.lat)]));
         this.setState({data});
