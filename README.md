@@ -1,3 +1,8 @@
+```
+cd examples/3d-heatmap
+npm start
+```
+
 <p align="right">
   <a href="https://npmjs.org/package/deck.gl">
     <img src="https://img.shields.io/npm/v/deck.gl.svg?style=flat-square" alt="version" />
